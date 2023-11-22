@@ -5,8 +5,11 @@ import {
   Routes,
   useLocation,
 } from "react-router-dom";
+
 import Menu from "./components/Menu";
 import menu from "./data/menu.json";
+
+import MySvg from "./pages/svg-demo";
 
 import "./App.css";
 
@@ -76,7 +79,7 @@ function App() {
 
   return (
     <Router>
-      <div className="grid">
+      {/* <div className="grid">
         <Menu parentCallback={callback} />
 
         <main id="section-example">
@@ -87,7 +90,9 @@ function App() {
             />
           </Routes>
         </main>
-      </div>
+      </div> */}
+
+      <MySvg />
     </Router>
   );
 }
